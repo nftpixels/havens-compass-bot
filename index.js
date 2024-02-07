@@ -32,7 +32,7 @@ app.post('/assignRole', async (req, res) => {
         console.log('Received Role Assignment Request For: ' + userId);
 
         // Your logic to assign a custom role to the user based on the userID
-        const guildId = '1038740889289367592'; 
+        const guildId = '930855071565086741'; 
         const guild = await client.guilds.fetch(guildId);
 
         if (!guild) {
@@ -63,7 +63,7 @@ app.post('/removeRole', async (req, res) => {
         console.log('Received Removal Request For: ' + userId);
 
         // Your logic to remove a custom role from the user based on the userID
-        const guildId = '1038740889289367592'; 
+        const guildId = '930855071565086741'; 
         const guild = await client.guilds.fetch(guildId);
 
         if (!guild) {

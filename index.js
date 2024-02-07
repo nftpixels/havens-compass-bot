@@ -63,7 +63,7 @@ app.post('/removeRole', async (req, res) => {
         console.log('Received Removal Request For: ' + userId);
 
         // Your logic to remove a custom role from the user based on the userID
-        const guildId = '718727239918944286'; 
+        const guildId = '1038740889289367592'; 
         const guild = await client.guilds.fetch(guildId);
 
         if (!guild) {
@@ -74,7 +74,7 @@ app.post('/removeRole', async (req, res) => {
         await member.fetch();  // Fetch the latest member data
 
         // Specify the custom role name here
-        const customRoleName = 'Havens Compass Skin Owner';
+        const customRoleName = 'SKALE Compaseers';
         const customRole = guild.roles.cache.find(role => role.name === customRoleName);
 
         if (customRole) {

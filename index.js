@@ -66,7 +66,7 @@ app.post('/assignRole', async (req, res) => {
         console.log('Received Role Assignment Request For: ' + userId);
 
         // Your logic to assign a custom role to the user based on the userID
-        const guildId = '930855071565086741'; 
+        const guildId = '1038740889289367592'; 
         const guild = await client.guilds.fetch(guildId);
 
         if (!guild) {

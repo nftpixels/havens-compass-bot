@@ -32,40 +32,6 @@ app.post('/assignRole', async (req, res) => {
         console.log('Received Role Assignment Request For: ' + userId);
 
         // Your logic to assign a custom role to the user based on the userID
-        const guildId = '// Import necessary modules
-const express = require('express');
-const bodyParser = require('body-parser');
-const { Client, GatewayIntentBits } = require('discord.js');
-const dotenv = require('dotenv');
-
-// Load environment variables from .env file
-dotenv.config();
-
-// Create an Express application
-const app = express();
-const port = 4000;
-
-// Create a new Discord client instance
-const client = new Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-    ],
-});
-
-// Retrieve the Discord bot token from environment variables
-const token = process.env.TOKEN;
-
-// Configure Express to parse JSON request bodies
-app.use(bodyParser.json());
-
-// Endpoint to handle role assignment
-app.post('/assignRole', async (req, res) => {
-    try {
-        const { userId } = req.body;
-
-        console.log('Received Role Assignment Request For: ' + userId);
-
-        // Your logic to assign a custom role to the user based on the userID
         const guildId = '1038740889289367592'; 
         const guild = await client.guilds.fetch(guildId);
 
